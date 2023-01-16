@@ -17,6 +17,10 @@
     justify-content: space-between;
     margin-bottom: 70px;
 }
+.header-nav img{
+                height: 40px;
+                width: 40px;
+}
 
 .nav-bar {
     display: flex;
@@ -77,6 +81,31 @@
 
 .banner img {
     width: 100%;
+
+}
+/* header section media query */
+@media screen and (max-width: 576px) {
+                                    .h-section{
+                                                padding: 0px;
+                                    }
+                                    .nav-bar{
+                                            flex-direction: column;
+                                            
+                                            
+                                    }
+                                    .header-nav{
+                                                padding: 20px 20px;
+                                    }
+                                    .banner img{
+                                                width: 370px;
+                                    }
+                                    .banner{
+                                            padding: 10px 20px;
+                                            border-radius: 5px;
+                                    }
+                                    .nav-bar li{
+                                                margin-bottom: 10px;
+                                    }
 
 }
 
@@ -237,10 +266,6 @@
 
 }
 
-/* .h-section {
-    display: none; */
-}
-
 /* features section media query */
 @media screen and (max-width: 576px) {
     .features-container {
@@ -275,7 +300,7 @@
 /* some facts section */
 .some-facts {
     padding: 0px 160px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .some-title {
@@ -352,7 +377,7 @@
 /* sponsor section */
 .sponsors {
     padding: 0px 120px;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
 }
 
 .sponsor-title {
@@ -408,11 +433,89 @@
 
 }
 
-/* footer section */
-.footer-sec{
-                padding: 0px 160px;
-                margin-bottom: 100px;
+/* extra'   different types of architect section  */
+.architect-heading {
+    margin: 0px auto;
+    width: 600px;
+    text-align: center;
 }
+
+.types-architect {
+    padding: 0px 130px;
+    margin-bottom: 150px;
+}
+
+.architect-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.architect-list img {
+    width: 60px;
+    height: 60px;
+}
+
+.architect-list {
+    border: 2px solid lightslategray;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.06);
+
+}
+
+.heading-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.heading-detls,
+.architect-decs {
+    color: #727272;
+
+}
+
+.architect-name {
+    font-size: 25px;
+    padding: 10px 0px 10px 0px;
+}
+
+.special-span {
+    color: #FF900E;
+    ;
+}
+
+.heading-detls {
+    margin: 24px 0px 50px 0px;
+}
+
+/* extra section media query */
+@media screen and (max-width: 576px) {
+                            .types-architect{
+                                            padding: 0px;
+                            }
+                            .architect-heading{
+                                                width: 350px;
+                            }
+                            .architect-container{
+                                        flex-direction: column;
+                                        padding: 20px;
+                            }
+                            .architect-list{
+                                        width: 330px;
+                                        height: 180px
+                                        ;
+                                        margin-bottom: 20px;
+                            }
+}
+
+/* footer section */
+.footer-sec {
+    padding: 0px 160px;
+    margin-bottom: 100px;
+}
+
 .footer-container {
     background: #FFF4E7;
     border-radius: 8px;
@@ -427,14 +530,17 @@
     text-align: center;
     padding: 15px;
 }
+
+
 /* footer sechtion query 
 */
 @media screen and (max-width: 576px) {
-            .footer-sec{
-                        padding: 0px 15px;
-                    
-            } 
-            .footer-container{
-                height: 80px;
-            }
+    .footer-sec {
+        padding: 0px 15px;
+
+    }
+
+    .footer-container {
+        height: 80px;
+    }
 }
